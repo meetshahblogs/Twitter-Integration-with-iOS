@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <TwitterKit/TWTRLogInButton.h>
 @interface LoginViewController : UIViewController
+
+@property (nonatomic, copy) TWTRLogInButton *twitterLoginButton;
 
 @end

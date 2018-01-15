@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		19501371C820C45B08385A12DA88CE58 /* Pods-TwitterIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A93DC8F3C25867C13DFDA5BBD0EAD /* Pods-TwitterIntegration-dummy.m */; };
+		5216C4BF200D626D007701E7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5216C4BE200D6260007701E7 /* SafariServices.framework */; };
 		52C9A147677658E9F2392964995FEB92 /* Pods-TwitterIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B338C85FB7DC7710CA2E9CBD08695D39 /* Pods-TwitterIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		974279E87B6523A0320D51E9771DAB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -16,19 +17,20 @@
 		0369E59625A57FA5996652241FBD7DFA /* Pods-TwitterIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterIntegration-frameworks.sh"; sourceTree = "<group>"; };
 		08C684689B1498E6D79020A8F643D353 /* Pods-TwitterIntegration-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterIntegration-resources.sh"; sourceTree = "<group>"; };
 		0F0FA2EB85F8D3167BAB3BA4C12E5C4C /* Pods-TwitterIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5216C4BE200D6260007701E7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
 		548DB00249008F253C5961A7F5AFE7F7 /* Pods-TwitterIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		607632321347DD389EE407CB49D30572 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6D4405E007706D108299AD4C8EE3901E /* Pods-TwitterIntegration-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterIntegration-acknowledgements.plist"; sourceTree = "<group>"; };
-		704D4C46F3E1CF921140DDF547C5AC19 /* Pods_TwitterIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwitterIntegration.framework; path = "Pods-TwitterIntegration.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		704D4C46F3E1CF921140DDF547C5AC19 /* Pods_TwitterIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8621F113D343918B10EBA21E07D3BBFD /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D3A93DC8F3C25867C13DFDA5BBD0EAD /* Pods-TwitterIntegration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterIntegration-dummy.m"; sourceTree = "<group>"; };
 		A7A315864F14A302BF6CD0B45E2C3642 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
 		B338C85FB7DC7710CA2E9CBD08695D39 /* Pods-TwitterIntegration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwitterIntegration-umbrella.h"; sourceTree = "<group>"; };
 		B7A4E9323F96D0A3EC04EBFC0B2B687D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA5B8D57FBB5DF4CA6C2824F214EF39A /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
-		E4534FC364D3C39A4DD82BD70EF6EE6F /* Pods-TwitterIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TwitterIntegration.modulemap"; sourceTree = "<group>"; };
+		E4534FC364D3C39A4DD82BD70EF6EE6F /* Pods-TwitterIntegration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TwitterIntegration.modulemap"; sourceTree = "<group>"; };
 		F86BEEC7B3AD171570303F24F76AFDCC /* Pods-TwitterIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5216C4BF200D626D007701E7 /* SafariServices.framework in Frameworks */,
 				974279E87B6523A0320D51E9771DAB89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +52,6 @@
 			children = (
 				411517A95D07289E303AEB5356B6B063 /* Frameworks */,
 			);
-			name = TwitterCore;
 			path = TwitterCore;
 			sourceTree = "<group>";
 		};
@@ -75,7 +77,6 @@
 				F91DB74D7D17026793F75D04FAF895D0 /* Frameworks */,
 				85E9FF6F5D05D8E98E9B3B73A4087643 /* Resources */,
 			);
-			name = TwitterKit;
 			path = TwitterKit;
 			sourceTree = "<group>";
 		};
@@ -137,6 +138,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5216C4BE200D6260007701E7 /* SafariServices.framework */,
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;

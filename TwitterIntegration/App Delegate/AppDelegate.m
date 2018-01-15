@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <TwitterKit/TWTRTwitter.h>
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [[Twitter sharedInstance] startWithConsumerKey:@"gTLyYfeaUWXH25BPWIAMy0Kbo" consumerSecret:@"ouLjH48lNKtXEa58nbA9CdnlT7G2OJEazxpXpM8DHs2MZOTt4O"];
+    
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

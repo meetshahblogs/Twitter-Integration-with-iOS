@@ -13,11 +13,19 @@
 @end
 
 @implementation LoginViewController
+@synthesize twitterLoginButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
+    TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
+        if (session) {
+            NSLog(@"signed in as %@", [session userName]);
+        } else {
+            NSLog(@"error: %@", [error localizedDescription]);
+        }
+    }];
+    logInButton.center = self.view.center;
+    [self.view addSubview:logInButton];}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
