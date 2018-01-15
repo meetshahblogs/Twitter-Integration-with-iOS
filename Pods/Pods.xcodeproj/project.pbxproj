@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		19501371C820C45B08385A12DA88CE58 /* Pods-TwitterIntegration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A93DC8F3C25867C13DFDA5BBD0EAD /* Pods-TwitterIntegration-dummy.m */; };
-		5216C4BF200D626D007701E7 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5216C4BE200D6260007701E7 /* SafariServices.framework */; };
 		52C9A147677658E9F2392964995FEB92 /* Pods-TwitterIntegration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B338C85FB7DC7710CA2E9CBD08695D39 /* Pods-TwitterIntegration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		974279E87B6523A0320D51E9771DAB89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -17,7 +16,6 @@
 		0369E59625A57FA5996652241FBD7DFA /* Pods-TwitterIntegration-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterIntegration-frameworks.sh"; sourceTree = "<group>"; };
 		08C684689B1498E6D79020A8F643D353 /* Pods-TwitterIntegration-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterIntegration-resources.sh"; sourceTree = "<group>"; };
 		0F0FA2EB85F8D3167BAB3BA4C12E5C4C /* Pods-TwitterIntegration-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterIntegration-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5216C4BE200D6260007701E7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.1.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
 		548DB00249008F253C5961A7F5AFE7F7 /* Pods-TwitterIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		607632321347DD389EE407CB49D30572 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -39,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5216C4BF200D626D007701E7 /* SafariServices.framework in Frameworks */,
 				974279E87B6523A0320D51E9771DAB89 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +135,6 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5216C4BE200D6260007701E7 /* SafariServices.framework */,
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
