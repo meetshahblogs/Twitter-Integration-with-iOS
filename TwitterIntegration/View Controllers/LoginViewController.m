@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "TwittsTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -16,20 +17,25 @@
 @synthesize twitterLoginButton;
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
-        if (session) {
-            NSLog(@"signed in as %@", [session userName]);
-        } else {
-            NSLog(@"error: %@", [error localizedDescription]);
-        }
-    }];
-    logInButton.center = self.view.center;
-    [self.view addSubview:logInButton];}
+  [super viewDidLoad];
+  TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
+    if (session) {
+      NSLog(@"signed in as %@", [session userName]);
+      NSLog(@"UserID as %@", [session userID]);
+      
+      //Go to TwittsView
+      TwittsTableViewController *twittsViewController = [[TwittsTableViewController alloc] initWithNibName:@"TwittsTableViewController" bundle:nil];
+      [self.navigationController pushViewController:twittsViewController animated:YES];
+    } else {
+      NSLog(@"error: %@", [error localizedDescription]);
+    }
+  }];
+  logInButton.center = self.view.center;
+  [self.view addSubview:logInButton];}
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 

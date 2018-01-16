@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1531167B200D9D510090AB19 /* TwittsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15311679200D9D510090AB19 /* TwittsTableViewController.m */; };
+		1531167C200D9D510090AB19 /* TwittsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1531167A200D9D510090AB19 /* TwittsTableViewController.xib */; };
+		1531167F200DAFC40090AB19 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1531167E200DAFC40090AB19 /* Twitter-icon.png */; };
 		40AAE52D7A5FE408420EA867 /* Pods_TwitterIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80BB3133038AE7F3791C78B /* Pods_TwitterIntegration.framework */; };
 		5216C4A3200D5B64007701E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216C4A2200D5B64007701E7 /* AppDelegate.m */; };
 		5216C4AB200D5B64007701E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5216C4AA200D5B64007701E7 /* Assets.xcassets */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15311678200D9D510090AB19 /* TwittsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwittsTableViewController.h; sourceTree = "<group>"; };
+		15311679200D9D510090AB19 /* TwittsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwittsTableViewController.m; sourceTree = "<group>"; };
+		1531167A200D9D510090AB19 /* TwittsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwittsTableViewController.xib; sourceTree = "<group>"; };
+		1531167E200DAFC40090AB19 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter-icon.png"; path = "../../../Downloads/Twitter-icon.png"; sourceTree = "<group>"; };
 		5216C49E200D5B64007701E7 /* TwitterIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5216C4A1200D5B64007701E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5216C4A2200D5B64007701E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,7 +32,6 @@
 		5216C4B9200D5BE1007701E7 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		5216C4BA200D5BE1007701E7 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		5216C4BB200D5BE1007701E7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		5219FDC5200D68C9005538D7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		85B4946D540B22C22C92AEFA /* Pods-TwitterIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterIntegration.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterIntegration/Pods-TwitterIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		D80BB3133038AE7F3791C78B /* Pods_TwitterIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03682B8DFA8112CDA20CFB8 /* Pods-TwitterIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterIntegration.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterIntegration/Pods-TwitterIntegration.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1531167D200DAFB60090AB19 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1531167E200DAFC40090AB19 /* Twitter-icon.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		5216C495200D5B64007701E7 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +78,7 @@
 		5216C4A0200D5B64007701E7 /* TwitterIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				1531167D200DAFB60090AB19 /* Assets */,
 				5216C4B8200D5BD2007701E7 /* View Controllers */,
 				5216C4B7200D5BAD007701E7 /* App Delegate */,
 				5216C4AA200D5B64007701E7 /* Assets.xcassets */,
@@ -88,6 +103,9 @@
 				5216C4B9200D5BE1007701E7 /* LoginViewController.h */,
 				5216C4BA200D5BE1007701E7 /* LoginViewController.m */,
 				5216C4BB200D5BE1007701E7 /* LoginViewController.xib */,
+				15311678200D9D510090AB19 /* TwittsTableViewController.h */,
+				15311679200D9D510090AB19 /* TwittsTableViewController.m */,
+				1531167A200D9D510090AB19 /* TwittsTableViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -95,7 +113,6 @@
 		993DD8BFC24CF7A9F96943F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5219FDC5200D68C9005538D7 /* SafariServices.framework */,
 				D80BB3133038AE7F3791C78B /* Pods_TwitterIntegration.framework */,
 			);
 			name = Frameworks;
@@ -171,8 +188,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1531167F200DAFC40090AB19 /* Twitter-icon.png in Resources */,
 				5216C4BD200D5BE1007701E7 /* LoginViewController.xib in Resources */,
 				5216C4AB200D5B64007701E7 /* Assets.xcassets in Resources */,
+				1531167C200D9D510090AB19 /* TwittsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1531167B200D9D510090AB19 /* TwittsTableViewController.m in Sources */,
 				5216C4B1200D5B64007701E7 /* main.m in Sources */,
 				5216C4A3200D5B64007701E7 /* AppDelegate.m in Sources */,
 				5216C4BC200D5BE1007701E7 /* LoginViewController.m in Sources */,
@@ -364,6 +384,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ6CCQ3QDT;
 				INFOPLIST_FILE = TwitterIntegration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetshah.TwitterIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -379,6 +400,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQ6CCQ3QDT;
 				INFOPLIST_FILE = TwitterIntegration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meetshah.TwitterIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
