@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "TwittsTableViewController.h"
+#import "TweetsTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -24,8 +24,8 @@
       NSLog(@"UserID as %@", [session userID]);
       
       //Go to TwittsView
-      TwittsTableViewController *twittsViewController = [[TwittsTableViewController alloc] initWithNibName:@"TwittsTableViewController" bundle:nil];
-      [self.navigationController pushViewController:twittsViewController animated:YES];
+      TweetsTableViewController *tweetsViewController = [[TweetsTableViewController alloc] initWithNibName:@"TweetsTableViewController" bundle:nil];
+      [self.navigationController pushViewController:tweetsViewController animated:YES];
     } else {
       NSLog(@"error: %@", [error localizedDescription]);
     }

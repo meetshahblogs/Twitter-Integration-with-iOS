@@ -6,14 +6,18 @@
 //  Copyright © 2018 Meet Shah. All rights reserved.
 //
 
-#import "TwittsTableViewController.h"
+#import "TweetsTableViewController.h"
 #import <TwitterKit/TWTRComposer.h>
+#import <TwitterKit/TWTRAPIClient.h>
+#import <TwitterKit/TWTRTwitter.h>
+#import <TwitterKit/TWTRTweetView.h>
 
-@interface TwittsTableViewController ()
+
+@interface TweetsTableViewController ()
 
 @end
 
-@implementation TwittsTableViewController
+@implementation TweetsTableViewController
 @synthesize tweetsArray;
 
 
@@ -25,6 +29,12 @@
   self.navigationItem.rightBarButtonItem = twitterButton;
 
   tweetsArray = [[NSMutableArray alloc] init];
+}
+
+-(void) viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  
+  [self getMyTweets];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +57,21 @@
   }];
 }
 
+-(void) getMyTweets {
+  NSString *userID = [Twitter sharedInstance].sessionStore.session.userID;
+  TWTRAPIClient *client = [[TWTRAPIClient alloc] initWithUserID:userID];
+  [client loadTweetWithID:@"20" completion:^(TWTRTweet *tweet, NSError *error) {
+    if (tweet) {
+      self.tableView confi
+      TWTRTweetView *tweetView = [[TWTRTweetView alloc] initWithTweet:tweet];
+      [self.view addSubview:tweetView];
+    } else {
+      NSLog(@"Error loading Tweet: %@", [error localizedDescription]);
+    }
+  }];
+  
+
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
