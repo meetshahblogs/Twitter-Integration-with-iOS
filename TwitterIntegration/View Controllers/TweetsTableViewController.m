@@ -94,7 +94,7 @@
   
   NSString *combinedString = [NSString stringWithFormat:@"%@:%@", encodedConsumerKeyString, encodedConsumerSecretKeyString];
   NSData *data = [combinedString dataUsingEncoding:NSUTF8StringEncoding];
-  NSString *encodedString = [data base64EncodedStringWithOptions:0];
+  NSString *encodedString = [NSString stringWithFormat:@"Basic %@", [data base64EncodedStringWithOptions:0]];
 
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://api.twitter.com/oauth2/token"]];
   [request setHTTPMethod:@"POST"];
@@ -113,6 +113,7 @@
       NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
       if (dict) {
         NSLog(@"%@", dict);
+        NSLog(@""%@, [dict valueForKey:@"access_token"]);
       }
     }
     if (error) {
