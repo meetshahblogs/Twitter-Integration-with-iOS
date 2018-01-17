@@ -21,11 +21,11 @@
   TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
     if (session) {
       NSLog(@"signed in as %@", [session userName]);
-      NSLog(@"UserID as %@", [session userID]);
       
       //Go to TwittsView
       TweetsTableViewController *tweetsViewController = [[TweetsTableViewController alloc] initWithNibName:@"TweetsTableViewController" bundle:nil];
       [self.navigationController pushViewController:tweetsViewController animated:YES];
+      
     } else {
       NSLog(@"error: %@", [error localizedDescription]);
     }
