@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
 @interface TweetsTableViewController : UITableViewController<NSURLSessionDataDelegate>
 
 @property (strong, nonatomic) NSMutableArray *tweetsArray;
+@property AppDelegate *appDelegate;
 
 @end

@@ -15,18 +15,23 @@
 @end
 
 @implementation AppDelegate
-
+@synthesize consumerSecretKey;
+@synthesize consumerKey;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
   
-  [[Twitter sharedInstance] startWithConsumerKey:@"0Xjp7X7Ju32ciTg8HQdozCNRA" consumerSecret:@"Q1CZkcVNI54Rc9KZXzU1aMRk9xTim1eqoz8T2hVR2yQeM4LN3k"];
+  NSString *path = [[NSBundle mainBundle] pathForResource:@"Property List" ofType:@"plist"];
+  NSDictionary *propertyListDict = [[NSDictionary alloc] initWithContentsOfFile:path];
+
+  consumerKey = [propertyListDict valueForKey:@"TwitterConsumerKey"];
+  consumerSecretKey = [propertyListDict valueForKey:@"TwitterConsumerSecretKey"];
+  
+  [[Twitter sharedInstance] startWithConsumerKey:consumerKey consumerSecret:consumerSecretKey];
   
   LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-  loginViewController.navigationItem.title = @"Login";
-  UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:loginViewController];
-  self.window.rootViewController = navController;
+  self.window.rootViewController = loginViewController;
   [self.window makeKeyAndVisible];
   return YES;
 }
