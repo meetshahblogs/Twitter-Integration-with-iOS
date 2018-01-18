@@ -15,6 +15,7 @@
 
 @property (strong, nonatomic) NSString *consumerKey;
 @property (strong, nonatomic) NSString *consumerSecretKey;
+@property (strong, nonatomic) NSString *twitterAPIUrl;
 
 @end
 

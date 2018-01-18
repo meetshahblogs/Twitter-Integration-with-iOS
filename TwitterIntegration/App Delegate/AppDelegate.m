@@ -17,6 +17,7 @@
 @implementation AppDelegate
 @synthesize consumerSecretKey;
 @synthesize consumerKey;
+@synthesize twitterAPIUrl;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
@@ -27,6 +28,7 @@
 
   consumerKey = [propertyListDict valueForKey:@"TwitterConsumerKey"];
   consumerSecretKey = [propertyListDict valueForKey:@"TwitterConsumerSecretKey"];
+  twitterAPIUrl = [propertyListDict valueForKey:@"TwitterAPIUrl"];
   
   [[Twitter sharedInstance] startWithConsumerKey:consumerKey consumerSecret:consumerSecretKey];
   

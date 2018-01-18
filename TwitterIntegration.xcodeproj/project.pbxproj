@@ -12,9 +12,9 @@
 		150B29F4200FCFFA00EACECF /* TweetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 150B29F3200FCFFA00EACECF /* TweetItem.m */; };
 		150B29F8200FD04F00EACECF /* TweetItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 150B29F6200FD04F00EACECF /* TweetItemTableViewCell.m */; };
 		150B29F9200FD04F00EACECF /* TweetItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150B29F7200FD04F00EACECF /* TweetItemTableViewCell.xib */; };
-		150B29FC200FD0C700EACECF /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 150B29FB200FD0C700EACECF /* Twitter-icon.png */; };
-		1531167B200D9D510090AB19 /* TweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15311679200D9D510090AB19 /* TweetsTableViewController.m */; };
-		1531167C200D9D510090AB19 /* TweetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1531167A200D9D510090AB19 /* TweetsTableViewController.xib */; };
+		151D211A2010262500CE9946 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 151D21192010262500CE9946 /* Twitter-icon.png */; };
+		151D212520102AD900CE9946 /* MyTweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D212320102AD900CE9946 /* MyTweetsTableViewController.m */; };
+		151D212620102AD900CE9946 /* MyTweetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151D212420102AD900CE9946 /* MyTweetsTableViewController.xib */; };
 		40AAE52D7A5FE408420EA867 /* Pods_TwitterIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80BB3133038AE7F3791C78B /* Pods_TwitterIntegration.framework */; };
 		5216C4A3200D5B64007701E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216C4A2200D5B64007701E7 /* AppDelegate.m */; };
 		5216C4AB200D5B64007701E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5216C4AA200D5B64007701E7 /* Assets.xcassets */; };
@@ -31,10 +31,10 @@
 		150B29F5200FD04F00EACECF /* TweetItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetItemTableViewCell.h; sourceTree = "<group>"; };
 		150B29F6200FD04F00EACECF /* TweetItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetItemTableViewCell.m; sourceTree = "<group>"; };
 		150B29F7200FD04F00EACECF /* TweetItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetItemTableViewCell.xib; sourceTree = "<group>"; };
-		150B29FB200FD0C700EACECF /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter-icon.png"; path = "../../../Downloads/Twitter-icon.png"; sourceTree = "<group>"; };
-		15311678200D9D510090AB19 /* TweetsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetsTableViewController.h; sourceTree = "<group>"; };
-		15311679200D9D510090AB19 /* TweetsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetsTableViewController.m; sourceTree = "<group>"; };
-		1531167A200D9D510090AB19 /* TweetsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetsTableViewController.xib; sourceTree = "<group>"; };
+		151D21192010262500CE9946 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
+		151D212220102AD900CE9946 /* MyTweetsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTweetsTableViewController.h; sourceTree = "<group>"; };
+		151D212320102AD900CE9946 /* MyTweetsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTweetsTableViewController.m; sourceTree = "<group>"; };
+		151D212420102AD900CE9946 /* MyTweetsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTweetsTableViewController.xib; sourceTree = "<group>"; };
 		5216C49E200D5B64007701E7 /* TwitterIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5216C4A1200D5B64007701E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5216C4A2200D5B64007701E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		150B29FA200FD0BC00EACECF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				150B29FB200FD0C700EACECF /* Twitter-icon.png */,
+				151D21192010262500CE9946 /* Twitter-icon.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 				5216C4B9200D5BE1007701E7 /* LoginViewController.h */,
 				5216C4BA200D5BE1007701E7 /* LoginViewController.m */,
 				5216C4BB200D5BE1007701E7 /* LoginViewController.xib */,
-				15311678200D9D510090AB19 /* TweetsTableViewController.h */,
-				15311679200D9D510090AB19 /* TweetsTableViewController.m */,
-				1531167A200D9D510090AB19 /* TweetsTableViewController.xib */,
+				151D212220102AD900CE9946 /* MyTweetsTableViewController.h */,
+				151D212320102AD900CE9946 /* MyTweetsTableViewController.m */,
+				151D212420102AD900CE9946 /* MyTweetsTableViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -225,11 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5216C4BD200D5BE1007701E7 /* LoginViewController.xib in Resources */,
+				151D212620102AD900CE9946 /* MyTweetsTableViewController.xib in Resources */,
 				5216C4AB200D5B64007701E7 /* Assets.xcassets in Resources */,
 				150B29EE200FC47E00EACECF /* Property List.plist in Resources */,
 				150B29F9200FD04F00EACECF /* TweetItemTableViewCell.xib in Resources */,
-				150B29FC200FD0C700EACECF /* Twitter-icon.png in Resources */,
-				1531167C200D9D510090AB19 /* TweetsTableViewController.xib in Resources */,
+				151D211A2010262500CE9946 /* Twitter-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1531167B200D9D510090AB19 /* TweetsTableViewController.m in Sources */,
+				151D212520102AD900CE9946 /* MyTweetsTableViewController.m in Sources */,
 				5216C4B1200D5B64007701E7 /* main.m in Sources */,
 				150B29F8200FD04F00EACECF /* TweetItemTableViewCell.m in Sources */,
 				5216C4A3200D5B64007701E7 /* AppDelegate.m in Sources */,

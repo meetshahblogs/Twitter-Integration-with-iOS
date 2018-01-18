@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import <TwitterKit/TWTRLogInButton.h>
-#import "TweetsTableViewController.h"
+#import "MyTweetsTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -22,11 +22,9 @@
     if (session) {
       NSLog(@"signed in as %@", [session userName]);
       
-      //Go to TweetsTableViewController
-      TweetsTableViewController *tweetsViewController = [[TweetsTableViewController alloc] initWithNibName:@"TweetsTableViewController" bundle:nil];
+      MyTweetsTableViewController *tweetsViewController = [[[MyTweetsTableViewController alloc] init]initWithNibName:@"MyTweetsTableViewController" bundle:nil];
       UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tweetsViewController];
       [self presentViewController:navController animated:YES completion:nil];
-      
     } else {
       NSLog(@"error: %@", [error localizedDescription]);
     }
