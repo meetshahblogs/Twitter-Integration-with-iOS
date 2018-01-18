@@ -75,9 +75,8 @@
 
 -(void) composeTweet {
   TWTRComposer *composer = [[TWTRComposer alloc] init];
-  
   [composer setText:@"just setting up my Twitter iOS Kit"];
-  [composer setImage:[UIImage imageNamed:@"Mickey_Mouse"]];
+//  [composer setImage:[UIImage imageNamed:@"Mickey_Mouse"]];
   
   // Called from a UIViewController
   [composer showFromViewController:self completion:^(TWTRComposerResult result) {
@@ -86,10 +85,14 @@
     }
     else {
       NSLog(@"Sending Tweet!");
+      
+      //Refresh Tableview
+      [self getTwitterOath2AccessToken];
     }
   }];
 }
 -(void) getTwitterOath2AccessToken {
+  
   __block NSString *accessToken = @"";
   
   //https://developer.twitter.com/en/docs/basics/authentication/overview/application-only
@@ -127,7 +130,7 @@
       }
     }
     if (error) {
-      NSLog(@"%@", error.localizedDescription);
+     NSLog(@"%@", error.localizedDescription);
     }
     if (response) {
       NSLog(@"%@", response.debugDescription);
@@ -172,6 +175,7 @@
               
               [client loadTweetsWithIDs:tweetsIDsArray completion:^(NSArray<TWTRTweet *> * _Nullable tweets, NSError * _Nullable error) {
                 if (tweets) {
+                  [tweetsArray removeAllObjects];
                   for (TWTRTweet *tweet in tweets) {
                     [tweetsArray addObject:tweet];
                   }
@@ -180,7 +184,6 @@
                   NSLog(@"Error loading Tweet: %@", [error localizedDescription]);
                 }
               }];
-              
             }
             
             if (error) {
@@ -196,8 +199,8 @@
         [dataTask resume];
       }
     }];
-    
   }
 }
+
 
 @end

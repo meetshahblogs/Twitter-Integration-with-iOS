@@ -8,5 +8,5 @@ target 'TwitterIntegration' do
   # Pods for TwitterIntegration
 
   pod 'TwitterKit'	
-
+  pod 'MBProgressHUD', '~> 1.1.0'
 end

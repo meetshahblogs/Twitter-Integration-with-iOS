@@ -1,15 +1,18 @@
 PODS:
+  - MBProgressHUD (1.1.0)
   - TwitterCore (3.1.0)
   - TwitterKit (3.3.0):
     - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
+  - MBProgressHUD (~> 1.1.0)
   - TwitterKit
 
 SPEC CHECKSUMS:
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: a984e343ca0a46e748935aa256ff8fd2fca573c6
+PODFILE CHECKSUM: 957824c6afdda1dc7caaae51824f31b81ef30062
 
 COCOAPODS: 1.3.1
