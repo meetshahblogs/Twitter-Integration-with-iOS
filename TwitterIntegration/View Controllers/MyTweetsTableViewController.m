@@ -11,6 +11,7 @@
 #import <TwitterKit/TWTRAPIClient.h>
 #import <TwitterKit/TWTRUser.h>
 #import <TwitterKit/TWTRTweetTableViewCell.h>
+#import <TwitterKit/TWTRComposer.h>
 
 
 @interface MyTweetsTableViewController ()
@@ -27,6 +28,12 @@
   appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
   
   tweetsArray = [[NSMutableArray alloc] init];
+  
+  self.navigationItem.title = @"My Tweets";
+  
+  //Set Tweet compose button
+  UIBarButtonItem *tweetButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(composeTweet)];
+  self.navigationItem.rightBarButtonItem = tweetButton;
   
   self.tableView.estimatedRowHeight = 150;
   self.tableView.rowHeight = UITableViewAutomaticDimension;
@@ -65,6 +72,23 @@
 
 
 #pragma mark - Helpers
+
+-(void) composeTweet {
+  TWTRComposer *composer = [[TWTRComposer alloc] init];
+  
+  [composer setText:@"just setting up my Twitter iOS Kit"];
+  [composer setImage:[UIImage imageNamed:@"Mickey_Mouse"]];
+  
+  // Called from a UIViewController
+  [composer showFromViewController:self completion:^(TWTRComposerResult result) {
+    if (result == TWTRComposerResultCancelled) {
+      NSLog(@"Tweet composition cancelled");
+    }
+    else {
+      NSLog(@"Sending Tweet!");
+    }
+  }];
+}
 -(void) getTwitterOath2AccessToken {
   __block NSString *accessToken = @"";
   
