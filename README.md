@@ -12,6 +12,7 @@ In this demo project we have covered following three Twitter APIs,
 ## Usage
 * `Property List.plist` file has twitter consumer-key and consumer-secret-key. Replace the values with the ones Twitter created for your application.
 
-* `Info.plist` file has URL Scheme for Twitter call-back Url that contains value `twitterkit-*****`. Replace `****` with your application's consumer-key.
+* `Info.plist` file has URL Scheme for Twitter call-back Url that contains value `twitterkit-<consumerKey>`. Replace `<consumerKey>` with your application's consumer key.
 
-
+## Features
+[screenshot](https://i.imgur.com/hE0GIkH.png)
