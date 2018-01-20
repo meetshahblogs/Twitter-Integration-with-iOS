@@ -19,6 +19,7 @@
 @synthesize consumerKey;
 @synthesize twitterAPIUrl;
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   
   self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -29,7 +30,7 @@
   consumerKey = [propertyListDict valueForKey:@"TwitterConsumerKey"];
   consumerSecretKey = [propertyListDict valueForKey:@"TwitterConsumerSecretKey"];
   twitterAPIUrl = [propertyListDict valueForKey:@"TwitterAPIUrl"];
-  
+
   [[Twitter sharedInstance] startWithConsumerKey:consumerKey consumerSecret:consumerSecretKey];
   
   LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];

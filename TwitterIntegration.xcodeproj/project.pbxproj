@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		150B29EE200FC47E00EACECF /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150B29ED200FC47E00EACECF /* Property List.plist */; };
 		150B29F0200FC7A500EACECF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150B29EF200FC7A500EACECF /* SafariServices.framework */; };
-		150B29F4200FCFFA00EACECF /* TweetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 150B29F3200FCFFA00EACECF /* TweetItem.m */; };
-		150B29F8200FD04F00EACECF /* TweetItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 150B29F6200FD04F00EACECF /* TweetItemTableViewCell.m */; };
-		150B29F9200FD04F00EACECF /* TweetItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 150B29F7200FD04F00EACECF /* TweetItemTableViewCell.xib */; };
 		151D211A2010262500CE9946 /* Twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 151D21192010262500CE9946 /* Twitter-icon.png */; };
 		151D212520102AD900CE9946 /* MyTweetsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 151D212320102AD900CE9946 /* MyTweetsTableViewController.m */; };
 		151D212620102AD900CE9946 /* MyTweetsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151D212420102AD900CE9946 /* MyTweetsTableViewController.xib */; };
@@ -27,11 +24,6 @@
 /* Begin PBXFileReference section */
 		150B29ED200FC47E00EACECF /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		150B29EF200FC7A500EACECF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		150B29F2200FCFFA00EACECF /* TweetItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetItem.h; sourceTree = "<group>"; };
-		150B29F3200FCFFA00EACECF /* TweetItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetItem.m; sourceTree = "<group>"; };
-		150B29F5200FD04F00EACECF /* TweetItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweetItemTableViewCell.h; sourceTree = "<group>"; };
-		150B29F6200FD04F00EACECF /* TweetItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweetItemTableViewCell.m; sourceTree = "<group>"; };
-		150B29F7200FD04F00EACECF /* TweetItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetItemTableViewCell.xib; sourceTree = "<group>"; };
 		151D21192010262500CE9946 /* Twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-icon.png"; sourceTree = "<group>"; };
 		151D212220102AD900CE9946 /* MyTweetsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyTweetsTableViewController.h; sourceTree = "<group>"; };
 		151D212320102AD900CE9946 /* MyTweetsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTweetsTableViewController.m; sourceTree = "<group>"; };
@@ -64,15 +56,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		150B29F1200FCFE100EACECF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				150B29F2200FCFFA00EACECF /* TweetItem.h */,
-				150B29F3200FCFFA00EACECF /* TweetItem.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		150B29FA200FD0BC00EACECF /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,16 +70,6 @@
 				151D212A2010404300CE9946 /* Mickey_Mouse.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		1597BC2F200E84C800F2EB71 /* TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				150B29F5200FD04F00EACECF /* TweetItemTableViewCell.h */,
-				150B29F6200FD04F00EACECF /* TweetItemTableViewCell.m */,
-				150B29F7200FD04F00EACECF /* TweetItemTableViewCell.xib */,
-			);
-			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		5216C495200D5B64007701E7 = {
@@ -123,8 +96,6 @@
 			children = (
 				151D21272010400B00CE9946 /* Resources */,
 				150B29FA200FD0BC00EACECF /* Assets */,
-				150B29F1200FCFE100EACECF /* Models */,
-				1597BC2F200E84C800F2EB71 /* TableViewCell */,
 				5216C4B8200D5BD2007701E7 /* View Controllers */,
 				5216C4B7200D5BAD007701E7 /* App Delegate */,
 				5216C4AA200D5B64007701E7 /* Assets.xcassets */,
@@ -240,7 +211,6 @@
 				151D212620102AD900CE9946 /* MyTweetsTableViewController.xib in Resources */,
 				5216C4AB200D5B64007701E7 /* Assets.xcassets in Resources */,
 				150B29EE200FC47E00EACECF /* Property List.plist in Resources */,
-				150B29F9200FD04F00EACECF /* TweetItemTableViewCell.xib in Resources */,
 				151D211A2010262500CE9946 /* Twitter-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,9 +286,7 @@
 			files = (
 				151D212520102AD900CE9946 /* MyTweetsTableViewController.m in Sources */,
 				5216C4B1200D5B64007701E7 /* main.m in Sources */,
-				150B29F8200FD04F00EACECF /* TweetItemTableViewCell.m in Sources */,
 				5216C4A3200D5B64007701E7 /* AppDelegate.m in Sources */,
-				150B29F4200FCFFA00EACECF /* TweetItem.m in Sources */,
 				5216C4BC200D5BE1007701E7 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
