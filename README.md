@@ -15,4 +15,4 @@ In this demo project we have covered following three Twitter APIs,
 * `Info.plist` file has URL Scheme for Twitter call-back Url that contains value `twitterkit-<consumerKey>`. Replace `<consumerKey>` with your application's consumer key.
 
 ## Features
-[screenshot](https://i.imgur.com/hE0GIkH.png)
+![screenshot](https://i.imgur.com/hE0GIkH.png)
