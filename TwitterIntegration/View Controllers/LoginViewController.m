@@ -18,19 +18,29 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
-    if (session) {
-      NSLog(@"signed in as %@", [session userName]);
-      
-      MyTweetsTableViewController *tweetsViewController = [[[MyTweetsTableViewController alloc] init]initWithNibName:@"MyTweetsTableViewController" bundle:nil];
-      UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tweetsViewController];
-      [self presentViewController:navController animated:YES completion:nil];
-    } else {
-      NSLog(@"error: %@", [error localizedDescription]);
-    }
-  }];
-  logInButton.center = self.view.center;
-  [self.view addSubview:logInButton];}
+  
+  TWTRSession *session = [Twitter sharedInstance].sessionStore.session;
+  if (!session) {
+    TWTRLogInButton *logInButton = [TWTRLogInButton buttonWithLogInCompletion:^(TWTRSession *session, NSError *error) {
+      if (session) {
+        NSLog(@"signed in as %@", [session userName]);
+        MyTweetsTableViewController *tweetsViewController = [[[MyTweetsTableViewController alloc] init]initWithNibName:@"MyTweetsTableViewController" bundle:nil];
+        UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tweetsViewController];
+        [self presentViewController:navController animated:YES completion:nil];
+        
+      } else {
+        NSLog(@"error: %@", [error localizedDescription]);
+      }
+    }];
+    logInButton.center = self.view.center;
+    [self.view addSubview:logInButton];
+    
+  } else {
+    MyTweetsTableViewController *tweetsViewController = [[[MyTweetsTableViewController alloc] init]initWithNibName:@"MyTweetsTableViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:tweetsViewController];
+    [self presentViewController:navController animated:YES completion:nil];
+  }
+}
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];

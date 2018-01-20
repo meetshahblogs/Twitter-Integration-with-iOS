@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <TwitterKit/TWTRTwitter.h>
 #import "LoginViewController.h"
+#import "MyTweetsTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -32,9 +33,19 @@
   twitterAPIUrl = [propertyListDict valueForKey:@"TwitterAPIUrl"];
 
   [[Twitter sharedInstance] startWithConsumerKey:consumerKey consumerSecret:consumerSecretKey];
+  TWTRSession *session = [Twitter sharedInstance].sessionStore.session;
+  if (session) {
+    
+    MyTweetsTableViewController *myTweetsViewController = [[MyTweetsTableViewController alloc] initWithNibName:@"MyTweetsTableViewController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:myTweetsViewController];
+    self.window.rootViewController = navController;
+    
+  } else {
+    
+    LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    self.window.rootViewController = loginViewController;
+  }
   
-  LoginViewController *loginViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-  self.window.rootViewController = loginViewController;
   [self.window makeKeyAndVisible];
   return YES;
 }

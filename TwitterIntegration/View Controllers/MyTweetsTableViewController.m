@@ -48,8 +48,12 @@
 -(void) viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
   
-  [self getTwitterOath2AccessToken];
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [self getTwitterOath2AccessToken];
+  });
 }
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -67,6 +71,7 @@
 //  cell.tweetView.style = TWTRTweetViewStyleRegular;
   cell.tweetView.showActionButtons = YES;
   [cell configureWithTweet:[tweetsArray objectAtIndex:indexPath.row]];
+  
   return cell;
 }
 
