@@ -10,10 +10,8 @@ In this demo project we have covered following three Twitter APIs,
 3. Use REST API to fetch tweets from user's timeline and show in the app in TableView format.
 
 ## Usage
-Step-1
-*   `Property List.plist` is the file that contains twitter consumer key and application secret keys. Once you create your application on Twitter apps dashboard, edit this file and paste the keys Twitter generated for your application.
+* `Property List.plist` file has twitter consumer-key and consumer-secret-key. Replace the values with the ones Twitter created for your application.
 
-Stp-2
-* `info.plist` file has URL Scheme for Twitter call-back Url that constain value `twitter-<consumerkey>`. Replace consumer-key here with the one Twitter created for your application.
+* `Info.plist` file has URL Scheme for Twitter call-back Url that contains value `twitterkit-*****`. Replace `****` with your application's consumer-key.
 
 
