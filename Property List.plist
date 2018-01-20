@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>TwitterConsumerKey</key>
-	<string>0Xjp7X7Ju32ciTg8HQdozCNRA</string>
+	<string>Add consumer key here</string>
 	<key>TwitterConsumerSecretKey</key>
-	<string>Q1CZkcVNI54Rc9KZXzU1aMRk9xTim1eqoz8T2hVR2yQeM4LN3k</string>
+	<string>Add consumer secret key here</string>
 	<key>TwitterAPIUrl</key>
 	<string>https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=%@&amp;count=10</string>
 </dict>
