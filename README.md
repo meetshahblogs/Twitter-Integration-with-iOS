@@ -16,3 +16,7 @@ In this demo project we have covered following three Twitter APIs,
 
 ## Features
 ![screenshot](https://i.imgur.com/hE0GIkH.png)
+
+## MIT License
+
+[Copyright](https://github.com/meetshahblogs/Twitter-Integration-with-iOS/blob/master/LICENSE) (c) 2018 Meet Shah
